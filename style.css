@@ -19,9 +19,39 @@ body{
 
 .search-btn { 
 
-    color: #e84118;
+    color: #e84118; /* boja search ikone */
     float: right;
     width: 40px;
     height: 40px;
     border-radius: 50%;
+    background: #2f3640; 
+    display: flex; /* ispisati sta je */
+    justify-content: center; /* pomjeranje search ikone u centar */
+    align-items: center; /* centriramo ga sad skroz */
+    transition: 0.4s;
 }
+ 
+.search-box:hover > .search-txt{ /* kombiniramo, da stoji samo ikona i kada hoverujemo misem onda se pokaze search-txt bar */
+    width: 240px;
+    padding: 0 6px;
+}
+
+.search-box:hover > .search-btn{ /* kada hoverujemo, onda se ikona search promijeni u bijelu boju */
+    background: white;
+}
+
+.search-txt{
+    
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color: white;
+    font-size: 16px;
+    transition: 0.4s; /* efekat, polako se prikazuje */
+    line-height: 40px;
+    width: 0px;
+}
+
+
